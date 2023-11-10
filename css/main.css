@@ -1,0 +1,496 @@
+/* ------------- СБРОС СТИЛЕЙ ------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* ------------------------------------------- */
+
+
+
+/* ------------- ПЕРЕМЕННЫЕ ------------ */
+
+:root {
+    --accent: #0E7D84;
+    --gray-light: #F5F5F7;
+    --accent-deep: #2B5C60;
+
+    --font-size-h1: 64px;
+    --font-size-h2: 32px;
+    --font-size-h3: 24px;
+    --font-size-button: 24px;
+    --font-size-p: 20px;
+}
+
+
+/* ------------------------------------------- */
+
+
+
+/* ------------- ОБЩИЕ СТИЛИ ------------ */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+    font-size: var(--font-size-h1);
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    color: var(--accent-deep);
+    text-transform: uppercase;
+    margin-bottom: 45px;
+
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    color: black;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.phone {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+}
+
+
+/* ------------------------------------------- */
+
+
+
+/* ------------- SECTION: HEADER ------------ */
+
+
+
+.header {
+    background-color: var(--accent);
+    color: white;
+    font-size: var(--font-size-h3);
+}
+
+
+.header__wrapper {
+    padding: 25px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__items {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------- SECTION: PREVIEW ------------ */
+
+.preview {
+    background-color: var(--gray-light);
+    text-align: center;
+
+    padding: 75px 0;
+}
+
+.button {
+    padding: 15px 100px;
+    border-radius: 30px;
+    background-color: inherit;
+    text-transform: uppercase;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+
+.preview__img {
+    margin-bottom: 60px;
+}
+
+.preview__btn {
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------- SECTION: NEWS ------------ */
+
+.news {
+    text-align: center;
+    padding-top: 75px;
+}
+
+.news__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    max-width: 650px;
+    
+}
+
+.content__img img{
+    height: 350px;
+    width: 350px;
+}
+
+.text-p {
+    text-align: justify;
+}
+
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------- SECTION: MODEL ------------ */
+
+.model {
+    padding: 75px 0;
+    text-align: center;
+}
+
+.model__items {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.model__img {
+    border: 5px solid var(--accent);
+    width: 250px;
+    height: 250px;
+}
+
+
+.model__text {
+    font-size: var(--font-size-p);
+    font-weight: 100;
+}
+
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------- SECTION: CONNECTION ------------ */
+
+
+.connection__wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent-deep)
+}
+
+.connection__data {
+    padding: 75px 40px 75px 70px;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+
+.connection__title {
+    color: white;
+    text-align: left;
+}
+
+.connection__fields {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.connection__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: initial;
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+    color: white; /* Добавлено*/
+}
+
+.connection__input::placeholder {
+    color: white;
+}
+
+.connection__input:focus { /* Добавлено*/
+    outline: none;
+}
+
+
+.connection__img {
+    width: 600px;
+    height: 600px;
+}
+
+.connection__btn {
+    font-size: var(--font-size-button);
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    border: none;
+    font-weight: 700;
+}
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- SECTION: ПОДВАЛ ------------ */
+
+.footer {
+    color: white;
+    background-color: black;
+    padding: 25px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- АДАПТАЦИЯ ------------ */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .news__content {
+        flex-direction: column;
+    }
+
+    .model__items {
+        flex-wrap: wrap;
+    }
+
+    .model__item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .connection__data {
+        padding: 20px;
+        /* max-width: 600px;
+        max-height: 600px; */
+        max-height: 400px;
+    }
+
+    .connection__img {
+        display: none;
+    }
+
+    .connection__title {
+        text-align: center;
+    }
+
+    .connection__btn {
+        font-size: 16px;
+    }
+
+
+
+}
+
+@media (max-width: 1000px) {
+    .preview__img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .preview__title {
+        font-size: 48px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nav__items {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .preview__title {
+        font-size: 32px;
+    }
+
+    .news__title,
+    .model__title,
+    .connection__title {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .model__text {
+        font-size: 14px;
+    }
+
+    .content__text {
+        font-size: 14px;
+    }
+
+
+    .model__item {
+        width: 100%;
+    } 
+
+    .connection {
+        background-color: var(--accent-deep)
+    }
+
+    .connection__fields {
+        margin-bottom: 50px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) { 
+
+    .preview__title {
+        font-size: 24px;
+    }
+
+    .news__title,
+    .model__title,
+    .connection__title {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 15px 60px;
+    }
+
+    .content__img {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+    .nav {
+        font-size: 16px;
+    }
+
+
+}
